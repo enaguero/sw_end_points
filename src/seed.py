@@ -2,6 +2,7 @@ from .models import People, Planet
 from .database import get_db
 
 db_gen = get_db()  # Creates the generator
+# https://stackoverflow.com/questions/67523421/sqlalchemy-session-object-has-no-attribute-add
 db = next(db_gen)   # Gets the session
 
 # Planets
